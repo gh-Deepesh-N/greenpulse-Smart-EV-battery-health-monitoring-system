@@ -20,6 +20,8 @@ normalization_factors = {
     "Charging_Efficiency": 1,
     "Energy_per_km": 0.3,
     "Cycle_Count_per_Year": 300,
+
+    
 }
 
 # Function to compute derived inputs
@@ -34,16 +36,16 @@ def compute_derived_inputs(user_input):
 
 # User-friendly test case (Updated Feature Names)
 test_case = {
-    "Battery Capacity (kWh)": 45,
-    "Charging Duration (hours)": 8.0,
-    "Charging Rate (kW)": 23,
-    "State of Charge (Start %)": 10,  # ✅ Updated Feature Name
-    "State of Charge (End %)": 100,  # ✅ Updated Feature Name
+    "Battery Capacity (kWh)": 50,
+    "Charging Duration (hours)": 2.0,
+    "Charging Rate (kW)": 40,
+    "State of Charge (Start %)": 30,
+    "State of Charge (End %)": 70,
     "Distance Driven (since last charge) (km)": 200,
-    "Temperature (°C)": 40,
-    "Vehicle Age (years)": 1,
+    "Temperature (°C)": 50,
+    "Vehicle Age (years)": 5,
     "Charger Type": 1,
-    "User Type": 0,
+    "User Type": 1,
 }
 
 # Compute derived inputs and merge with user inputs
